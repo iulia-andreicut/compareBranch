@@ -20,7 +20,7 @@ import junit.framework.Assert;
                    @Test
                     public void alwaysPass2()
                     {
-                        Assert.assertEquals(1, 1);
+                        Assert.assertEquals(1, 2);
                     }
                    @Test  
                    public void alwaysPass3()
@@ -34,7 +34,7 @@ import junit.framework.Assert;
                   @Test
                     public void alwaysPass4()
                     {
-                        Assert.assertEquals(1, 2);
+                        Assert.assertEquals(1, 1);
                     }
                    @Test
                    public void alwaysFail5()
