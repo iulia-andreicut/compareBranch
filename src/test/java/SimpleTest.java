@@ -29,7 +29,7 @@ import junit.framework.Assert;
                   @Test
                     public void alwaysPass4()
                     {
-                        Assert.assertEquals(1, 3);
+                        Assert.assertEquals(1, 4);
                     }
                    @Test
                    public void alwaysFail5()
