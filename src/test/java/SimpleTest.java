@@ -29,12 +29,12 @@ import junit.framework.Assert;
                   @Test
                     public void alwaysPass4()
                     {
-                        Assert.assertEquals(1, 2);
+                        Assert.assertEquals(1, 1);
                     }
                    @Test
                    public void alwaysFail5()
                    {
-                       Assert.assertEquals(1, 2);
+                       Assert.assertEquals(1, 1);
                    }
 
 
@@ -58,6 +58,7 @@ import junit.framework.Assert;
                    {
                        Assert.assertEquals(1, 2);
                    }
+
                   @Test
                    public void alwaysFail10()
                    {
@@ -66,17 +67,18 @@ import junit.framework.Assert;
                   @Test
                    public void alwaysFail11()
                    {
-                       Assert.assertEquals(1, 2);
+                       Assert.assertEquals(1, 1);
                    }
                   @Test
                    public void alwaysFail12()
                    {
-                       Assert.assertEquals(1, 2);
+                       Assert.assertEquals(1, 1);
                    }
+                  
                   @Test
                    public void alwaysFail13()
                    {
-                       Assert.assertEquals(1, 2);
+                       Assert.assertEquals(1, 1);
                    }
                   
                     @Test
