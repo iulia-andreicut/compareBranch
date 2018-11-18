@@ -11,7 +11,7 @@ import junit.framework.Assert;
                    @Test  
                    public void alwaysPass1()
                    {
-                       Assert.assertEquals(1, 1);
+                       Assert.assertEquals(1, 2);
                    }
                 
 
