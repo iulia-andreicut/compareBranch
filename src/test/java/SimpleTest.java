@@ -7,6 +7,19 @@ import junit.framework.Assert;
                  * Created by dshmaya on 15/11/2017 ...04
                 */  
                 public class SimpleTest {
+                  
+                  public void sometimesPass46()
+    {
+
+         Random random = new Random();
+         int randomNumber = random.nextInt(100);
+         boolean smallerThanFiftee =  randomNumber < 50 ? true : false;
+         Assert.assertEquals(smallerThanFiftee, true);
+        try {
+            Assert.assertEquals(true, true);
+        }catch (NullPointerException w){
+		}
+    }
                                 
                    @Test  
                    public void alwaysPass1()
