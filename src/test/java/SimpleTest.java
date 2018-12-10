@@ -109,7 +109,6 @@
                     }
                                 
                     @Test
-                    @Ignore
                     public void ignored2()
                     {
                         Random random = new Random();
