@@ -39,6 +39,12 @@
                     {
                         Assert.assertEquals(1, 1);
                     }
+			@Test
+                    public void alwaysPass2new()
+                    {
+			    String password = "test.123";
+                        Assert.assertEquals(password, "Test123.");
+                    }
                    @Test  
                    public void alwaysPass3()
                    {
