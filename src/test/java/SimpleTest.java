@@ -8,31 +8,43 @@
                  * Created by dshmaya on 15/11/2017 ...04
                 */  
                 public class SimpleTest {
+			
+		public void sometimesPass48()
+    		{
+
+			 Random random = new Random();
+			 int randomNumber = random.nextInt(100);
+			 boolean smallerThanFiftee =  randomNumber < 50 ? true : false;
+			 Assert.assertEquals(smallerThanFiftee, true);
+			try {
+			    Assert.assertEquals(true, true);
+			}catch (NullPointerException w){
+		}
+		
                   
-                  public void sometimesPass46()
-    {
-
-         Random random = new Random();
-         int randomNumber = random.nextInt(100);
-         boolean smallerThanFiftee =  randomNumber < 50 ? true : false;
-         Assert.assertEquals(smallerThanFiftee, true);
-        try {
-            Assert.assertEquals(true, true);
-        }catch (NullPointerException w){
+                public void sometimesPass46()
+    		{
+			 Random random = new Random();
+			 int randomNumber = random.nextInt(100);
+			 boolean smallerThanFiftee =  randomNumber < 50 ? true : false;
+			 Assert.assertEquals(smallerThanFiftee, true);
+			try {
+			    Assert.assertEquals(true, true);
+			}catch (NullPointerException w)
 		}
-    }
-			public void sometimesPass47()
-    {
+   
+		public void sometimesPass47()
+	    	{
 
-         Random random = new Random();
-         int randomNumber = random.nextInt(100);
-         boolean smallerThanFiftee =  randomNumber < 50 ? true : false;
-         Assert.assertEquals(smallerThanFiftee, true);
-        try {
-            Assert.assertEquals(true, true);
-        }catch (NullPointerException w){
+			 Random random = new Random();
+			 int randomNumber = random.nextInt(100);
+			 boolean smallerThanFiftee =  randomNumber < 50 ? true : false;
+			 Assert.assertEquals(smallerThanFiftee, true);
+			try {
+			    Assert.assertEquals(true, true);
+			}catch (NullPointerException w){}
+		
 		}
-}
                                 
                    @Test  
                    public void alwaysPass1()
@@ -41,8 +53,7 @@
 			int randomNumber = random.nextInt(100);
 			   try {
             		Assert.assertEquals(true, true);
-        		}catch (NullPointerException w){
-}
+        		}catch (NullPointerException w){}
                    }
                 
 
@@ -51,11 +62,13 @@
                     {
                         Assert.assertEquals(1, 1);
                     }
-			@Test
-                    public void alwaysPass2new()
+			
+		    public void Password()
                     {
-			    String password = "test.123";
-                        Assert.assertEquals(password, "Test123.");
+			String password = "test.123";
+                        try {
+			    Assert.assertEquals(password, "Test123.");
+			}catch (NullPointerException w){}
                     }
                    @Test  
                    public void alwaysPass3()
@@ -126,9 +139,9 @@
                         int randomNumber = random.nextInt(99);
                         boolean smallerThanFiftee =  randomNumber < 50 ? true : false;
                         Assert.assertEquals(smallerThanFiftee, true); 
-			    try {
-            		Assert.assertEquals(true, true);
-        		}catch (NullPointerException w){
+// 			    try {
+//             		Assert.assertEquals(true, true);
+//         		}catch (NullPointerException w){}
                     }
                                 
                     @Test
@@ -139,7 +152,7 @@
                         int randomNumber = random.nextInt(100);
                         boolean smallerThanFiftee =  randomNumber < 50 ? true : false;
                         Assert.assertEquals(smallerThanFiftee, true);
-			Assert.assertEquals(true, true);
-        		}catch (NullPointerException w){
-                    }
+// 			Assert.assertEquals(true, true);
+//         		}catch (NullPointerException w){
+//                     }
                 }
