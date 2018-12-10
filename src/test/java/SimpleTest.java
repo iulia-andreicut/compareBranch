@@ -26,6 +26,11 @@
                    public void alwaysPass1()
                    {
                        Assert.assertEquals(1, 1);
+			int randomNumber = random.nextInt(100);
+			   try {
+            		Assert.assertEquals(true, true);
+        		}catch (NullPointerException w){
+}
                    }
                 
 
