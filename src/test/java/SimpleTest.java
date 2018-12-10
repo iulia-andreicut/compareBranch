@@ -1,7 +1,8 @@
-import junit.framework.Assert;
+		//import junit.framework.Assert;
                 import org.junit.Ignore;
                 import org.junit.Test;
                 import java.util.Random;
+		import org.junit.Assert;
                                 
                 /**  
                  * Created by dshmaya on 15/11/2017 ...04
@@ -103,8 +104,8 @@ import junit.framework.Assert;
                         boolean smallerThanFiftee =  randomNumber < 50 ? true : false;
                         Assert.assertEquals(smallerThanFiftee, true); 
 			    try {
-            Assert.assertEquals(true, true);
-        }catch (NullPointerException w){
+            		Assert.assertEquals(true, true);
+        		}catch (NullPointerException w){
                     }
                                 
                     @Test
@@ -115,5 +116,7 @@ import junit.framework.Assert;
                         int randomNumber = random.nextInt(100);
                         boolean smallerThanFiftee =  randomNumber < 50 ? true : false;
                         Assert.assertEquals(smallerThanFiftee, true);
+			Assert.assertEquals(true, true);
+        		}catch (NullPointerException w){
                     }
                 }
