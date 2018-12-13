@@ -18,7 +18,7 @@
 			 Assert.assertEquals(smallerThanFiftee, true);
 			try {
 			    Assert.assertEquals(true, true);
-			}catch (NullPointerException w){}
+			}catch (NullPointerException w){
 		}
 		
                   
@@ -131,8 +131,7 @@
                        Assert.assertEquals(1, 1);
                    }
                   
-                    @Test
-                    @Ignore
+                    
                     public void ignored1()
                     {
                         Random random = new Random();
