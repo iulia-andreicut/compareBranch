@@ -9,18 +9,11 @@
                 */  
                 public class SimpleTest {
 			
-		public void sometimesPass48()
-    		{
-
-			 Random random = new Random();
-			 int randomNumber = random.nextInt(100);
-			 boolean smallerThanFiftee =  randomNumber < 50 ? true : false;
-			 Assert.assertEquals(smallerThanFiftee, true);
-			try {
-			    Assert.assertEquals(true, true);
-			}catch (NullPointerException w){
-		}
-		
+		@Test
+                   public void alwaysFail15()
+                   {
+                       Assert.assertEquals(1, 2);
+}
                   
                 public void sometimesPass46()
     		{
@@ -131,7 +124,7 @@
                        Assert.assertEquals(1, 1);
                    }
                   
-                    
+                    @Test
                     public void ignored1()
                     {
                         Random random = new Random();
@@ -143,7 +136,7 @@
 //         		}catch (NullPointerException w){}
                     }
                                 
-                        
+                     @Test   
                     public void ignored2()
                     {
                         Random random = new Random();
