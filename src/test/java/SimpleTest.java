@@ -56,13 +56,7 @@
                         Assert.assertEquals(1, 1);
                     }
 			
-		    public void Password()
-                    {
-			String password = "test.123";
-                        try {
-			    Assert.assertEquals(password, "Test123.");
-			}catch (NullPointerException w){}
-                    }
+		    
                    @Test  
                    public void alwaysPass3()
                    {
@@ -115,16 +109,22 @@
                   @Test
                    public void alwaysFail12()
                    {
-                       Assert.assertEquals(1, 1);
+                       Assert.assertEquals(1, 2);
                    }
                   
                   @Test
                    public void alwaysFail13()
                    {
+                       Assert.assertEquals(1, 2);
+                   }
+			@Test
+                   public void alwaysPass13()
+                   {
                        Assert.assertEquals(1, 1);
                    }
                   
                     @Test
+			@TestIgnore
                     public void ignored1()
                     {
                         Random random = new Random();
