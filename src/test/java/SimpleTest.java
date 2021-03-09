@@ -55,6 +55,16 @@
             		Assert.assertEquals(true, true);
         		}catch (NullPointerException w){}
                    }
+			
+			@Test  
+                   public void alwaysPass1Copy()
+                   {
+                       Assert.assertEquals(1, 1);
+			int randomNumber = random.nextInt(100);
+			   try {
+            		Assert.assertEquals(true, true);
+        		}catch (NullPointerException w){}
+                   }
                 
 
                    @Test
